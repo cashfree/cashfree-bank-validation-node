@@ -69,7 +69,10 @@ async function verifyBankAccount(token){
         });
         const finalUrl = baseUrl + url['bankValidation'] + queryString.slice(0, -1);
         const r = await getAsync(finalUrl, {headers: createHeader(token)});
-        console.log(JSON.parse(r.body));
+        const body =  JSON.parse(r.body);
+        const {status, subCode, message} = body;
+        if(status !== 'SUCCESS' || subCode !== '200') throw {name: "incorectResponseError", message: "incorrect response recieved: " + message};
+        console.log(body);
     }
     catch(err){
         console.log("err in verifying bank account");
