@@ -1,27 +1,65 @@
-# cashfree-bank-validation-node
+# Cashfree Bank Validation Integration Kit for Node
 
-Below is an integration flow on how to use Cashfree's bank validation.
-Please go through the payout docs here: https://docs.cashfree.com/docs/payout/guide/
+Below is an integration flow on how to use Cashfree's payouts.
+Please go through the payout docs [here](https://docs.cashfree.com/docs/payout/guide/)
+<br/>
+This kit is linked to the Bank Validation flow. Go [here](https://dev.cashfree.com/payouts/integrations/bank-validation) to get a better understanding.
+<br/>
 
-The following script contains the following functionalities :
-- 1.getToken() -> to get auth token to be used in all following calls.
-- 2.verifyBankAccount() -> to verify bank account.
+## Functionalities
+
+The following kit contains the following functionalities:
+    <ol>
+    <li> [getToken](https://dev.cashfree.com/api-reference/payouts-api#authorise): to get auth token to be used in all          following calls.
+    <li> [verifyBankAccount](https://dev.cashfree.com/api-reference/payouts-api#bank-validation): to verify bank account.
+    </ol>
+
+## Build Steps
+
+follow the following build steps to compile the Integration kit:
+  1. Download the code and cd into the directory containing the code.
+  2. run the following command from your terminal to install all the dependencies:
+      ```
+      npm install
+      ```
+## Set Up
+
+### Pre Requisites:
+The following kit uses information stored in a config file. Before running the code for the first time open the config.json file
+and add the relevant details:
+  1. ClientId: This is a unique Identifier that identifies the merchant. For more information please go [here](https://dev.cashfree.com/payouts/integrations/pre-requisites#credentials).
+  2. ClientSecret: Corresponding secret key for the given ClientId that helps Cashfree indentify the merchant. For more information please go [here](https://dev.cashfree.com/payouts/integrations/pre-requisites#credentials).
+  3. Environment: Enviornment to be hit. The following values are accepted prod: for production, test: for test enviornment.
+
+### IP Whitelisting:
+
+Your IP has to be whitelisted to hit Cashfree's server. For more information please go [here](https://dev.cashfree.com/payouts/integrations/pre-requisites#ip).
+
+### Bank Details:
+
+The following kit needs bank account details to validate the bank account. For a list of required fields go [here](https://dev.cashfree.com/api-reference/payouts-api#bank-validation)
+<br/>
+The kit picks up the bank account details from the config file bankDetails section. Required fields are:
+  1. name: name of the account to be verified.
+  2. phone: phone number of the account holder.
+  3. bankAccount: bank account to be validated.
+  4. ifsc: ifsc of corresponding bank account.
 
 
-All the data used by the script can be found in the config.json file. This includes the clientId, clientSecret, bankDetails object.
-You can change keep changing the values in the config file and running the script.
-Please enter your clientId and clientSecret, along with the appropriate enviornment and bank details
+## Usage
 
-## Prerequisites
+Once the config file is setup you can run the executable, to run the entire flow. Authorise and validate bank account. 
 
-1. Active cashfree payout account
-2. Node.js
+run the following command in the terminal to run the script:
+```
+  node app.js
+ ```
 
+You can change the necessary values in the config file as per your requirements and re run the script whenever needed.
 
-## Running the kit
+## Doubts
 
-1. Clone the code
-2. run npm init to install all dependencies
-3. enter the correct values into the config.json file
-4. for execution: node app.js
+Reach out to techsupport@cashfree.com in case of doubts.
+ 
+
 
