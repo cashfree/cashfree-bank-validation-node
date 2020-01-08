@@ -9,7 +9,7 @@ const config = {
         "ClientSecret": "d1141e574b7e3b1caf032ee7af3e4dbea3a61681",
         "ENV": "TEST",
     }
-}
+};
 
 (async () => {
     //init
