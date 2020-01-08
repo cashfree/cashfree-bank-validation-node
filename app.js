@@ -1,3 +1,12 @@
+/*
+Below is an integration flow on how to use Cashfree's sdk for bank validation.
+Please go through the payout docs here: https://docs.cashfree.com/docs/payout/guide/
+The following script contains the following functionalities :
+    2.verifyBankAccount() -> to verify bank account.
+
+To use the script please enter your enviornment and corresponding client id and client secret
+*/
+
 const cfSdk = require('cashfree-sdk');
 
 const {Payouts} = cfSdk;
@@ -5,8 +14,8 @@ const {Validation} = Payouts;
 
 const config = {
     Payouts: {
-        "ClientID": "CF6130FKDN0O61WFQMYUM",
-        "ClientSecret": "d1141e574b7e3b1caf032ee7af3e4dbea3a61681",
+        "ClientID": "client_id",
+        "ClientSecret": "client_secret",
         "ENV": "TEST",
     }
 };
