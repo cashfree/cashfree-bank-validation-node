@@ -1,0 +1,14 @@
+{
+  "name": "bank_validation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cashfree-sdk": "git+https://github.com/cashfree/cashfree-sdk-nodejs.git"
+  }
+}
