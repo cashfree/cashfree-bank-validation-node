@@ -1,6 +1,6 @@
 # Cashfree Bank Validation Integration Kit for Node
 
-Below is an integration flow on how to use Cashfree's payouts.
+Below is an integration flow on how to use Cashfree's payouts sdk.
 Please go through the payout docs [here](https://docs.cashfree.com/docs/payout/guide/)
 <br/>
 This kit is linked to the Bank Validation flow. Go [here](https://dev.cashfree.com/payouts/integrations/bank-validation) to get a better understanding.
@@ -10,9 +10,11 @@ This kit is linked to the Bank Validation flow. Go [here](https://dev.cashfree.c
 
 The following kit contains the following functionalities:
     <ol>
-    <li> [getToken](https://dev.cashfree.com/api-reference/payouts-api#authorise): to get auth token to be used in all          following calls.
-    <li> [verifyBankAccount](https://dev.cashfree.com/api-reference/payouts-api#bank-validation): to verify bank account.
+    <li> Init: to initialise the sdk.
+    <li> Validation.ValidateBankDetails: to verify bank account.
     </ol>
+<br/>
+You can find more information on the node sdk [here](https://github.com/cashfree/cashfree-sdk-nodejs)
 
 ## Build Steps
 
@@ -25,7 +27,7 @@ follow the following build steps to compile the Integration kit:
 ## Set Up
 
 ### Pre Requisites:
-The following kit uses information stored in a config file. Before running the code for the first time open the config.json file
+The following kit uses information stored in a app.js file. Before running the code for the first time open the app.js file
 and add the relevant details:
   1. ClientId: This is a unique Identifier that identifies the merchant. For more information please go [here](https://dev.cashfree.com/payouts/integrations/pre-requisites#credentials).
   2. ClientSecret: Corresponding secret key for the given ClientId that helps Cashfree indentify the merchant. For more information please go [here](https://dev.cashfree.com/payouts/integrations/pre-requisites#credentials).
@@ -48,7 +50,7 @@ The kit picks up the bank account details from the config file bankDetails secti
 
 ## Usage
 
-Once the config file is setup you can run the executable, to run the entire flow. Authorise and validate bank account. 
+Once the app.js file is setup you can run the executable, to run the entire flow. Authorise and validate bank account. 
 
 run the following command in the terminal to run the script:
 ```
