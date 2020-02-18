@@ -14,7 +14,7 @@ The following kit contains the following functionalities:
     <li> Validation.ValidateBankDetails: to verify a bank account.
     </ol>
 <br/>
-You can find more information on the node sdk [here](https://github.com/cashfree/cashfree-sdk-nodejs)
+You can find more information on the node SDK [here](https://github.com/cashfree/cashfree-sdk-nodejs)
 
 ## Build Steps
 
@@ -27,11 +27,11 @@ follow the following build steps to compile the Integration kit:
 ## Set Up
 
 ### Pre Requisites:
-The following kit uses information stored in a app.js file. Before running the code for the first time open the app.js file
+The following kit uses information stored in the app.js file. Before running the code for the first time open the app.js file
 and add the relevant details:
-  1. ClientId: This is a unique Identifier that identifies the merchant. For more information please go [here](https://dev.cashfree.com/payouts/integrations/pre-requisites#credentials).
-  2. ClientSecret: Corresponding secret key for the given ClientId that helps Cashfree indentify the merchant. For more information please go [here](https://dev.cashfree.com/payouts/integrations/pre-requisites#credentials).
-  3. Environment: Enviornment to be hit. The following values are accepted prod: for production, test: for test enviornment.
+  1. ClientId: This is a unique identifier that identifies the merchant. For more information please go [here](https://dev.cashfree.com/payouts/integrations/pre-requisites#credentials).
+  2. ClientSecret: Corresponding secret key for the given ClientId that helps Cashfree identify the merchant. For more information please go [here](https://dev.cashfree.com/payouts/integrations/pre-requisites#credentials).
+  3. Environment: Environment to be hit. The following values are accepted prod: for production, test: for the test environment.
 
 ### IP Whitelisting:
 
@@ -41,7 +41,7 @@ Your IP has to be whitelisted to hit Cashfree's server. For more information ple
 
 The following kit needs bank account details to validate the bank account. For a list of required fields go [here](https://dev.cashfree.com/api-reference/payouts-api#bank-validation)
 <br/>
-The kit picks up the bank account details from the app.js file validateBankDetails paramater object. Required fields are:
+The kit picks up the bank account details from the app.js file validateBankDetails parameter object. Required fields are:
   1. name: name of the account to be verified.
   2. phone: phone number of the account holder.
   3. bankAccount: bank account to be validated.
