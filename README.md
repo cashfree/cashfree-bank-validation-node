@@ -29,17 +29,17 @@ follow the following build steps to compile the Integration kit:
 ### Pre Requisites:
 The following kit uses information stored in the app.js file. Before running the code for the first time open the app.js file
 and add the relevant details:
-  1. ClientId: This is a unique identifier that identifies the merchant. For more information please go [here](https://dev.cashfree.com/payouts/integrations/pre-requisites#credentials).
-  2. ClientSecret: Corresponding secret key for the given ClientId that helps Cashfree identify the merchant. For more information please go [here](https://dev.cashfree.com/payouts/integrations/pre-requisites#credentials).
+  1. ClientId: This is a unique identifier that identifies the merchant. For more information please go [here](https://dev.cashfree.com/development/api/credentials).
+  2. ClientSecret: Corresponding secret key for the given ClientId that helps Cashfree identify the merchant. For more information please go [here](https://dev.cashfree.com/development/api/credentials).
   3. Environment: Environment to be hit. The following values are accepted prod: for production, test: for the test environment.
 
 ### IP Whitelisting:
 
-Your IP has to be whitelisted to hit Cashfree's server. For more information please go [here](https://dev.cashfree.com/payouts/integrations/pre-requisites#ip).
+Your IP has to be whitelisted to hit Cashfree's server. For more information please go [here](https://dev.cashfree.com/development/api/ip-whitelisting).
 
 ### Bank Details:
 
-The following kit needs bank account details to validate the bank account. For a list of required fields go [here](https://dev.cashfree.com/api-reference/payouts-api#bank-validation)
+The following kit needs bank account details to validate the bank account. For a list of required fields go [here](https://dev.cashfree.com/api-reference/payouts-api#bank-verification)
 <br/>
 The kit picks up the bank account details from the app.js file validateBankDetails parameter object. Required fields are:
   1. name: name of the account to be verified.
