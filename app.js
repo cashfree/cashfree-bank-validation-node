@@ -1,8 +1,8 @@
 /*
 Below is an integration flow on how to use Cashfree's sdk for bank validation.
-Please go through the payout docs here: https://docs.cashfree.com/docs/payout/guide/
+Please go through the payout docs here: https://dev.cashfree.com/payouts
 The following script contains the following functionalities :
-    2.verifyBankAccount() -> to verify bank account.
+    2.Validation.verifyBankAccount() -> to verify bank account.
 
 To use the script please enter your enviornment and corresponding client id and client secret
 */
