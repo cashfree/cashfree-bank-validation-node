@@ -14,9 +14,9 @@ const {Validation} = Payouts;
 
 const config = {
     Payouts: {
-        "ClientID": "client_id",
-        "ClientSecret": "client_secret",
-        "ENV": "TEST",
+        ClientID: "client_id",
+        ClientSecret: "client_secret",
+        ENV: "TEST",
     }
 };
 
