@@ -1,7 +1,7 @@
 # Cashfree Bank Validation Integration Kit for Node
 
 Below is an integration flow on how to use Cashfree's payouts node SDK.
-Please go through the payout docs [here](https://dev.cashfree.com/payouts)
+Please go through the payout docs [here](https://dev.cashfree.com/payouts).
 <br/>
 This kit is linked to the Bank Validation flow. Go [here](https://dev.cashfree.com/payouts/integrations/bank-validation) to get a better understanding.
 <br/>
@@ -14,7 +14,7 @@ The following kit contains the following functionalities:
     <li> Validation.ValidateBankDetails: to verify a bank account.
     </ol>
 <br/>
-You can find more information on the node SDK [here](https://github.com/cashfree/cashfree-sdk-nodejs)
+You can find more information on the node SDK [here](https://github.com/cashfree/cashfree-sdk-nodejs).
 
 ## Build Steps
 
@@ -39,7 +39,7 @@ Your IP has to be whitelisted to hit Cashfree's server. For more information ple
 
 ### Bank Details:
 
-The following kit needs bank account details to validate the bank account. For a list of required fields go [here](https://dev.cashfree.com/api-reference/payouts-api#bank-verification)
+The following kit needs bank account details to validate the bank account. For a list of required fields go [here](https://dev.cashfree.com/api-reference/payouts-api#bank-verification).
 <br/>
 The kit picks up the bank account details from the app.js file validateBankDetails parameter object. Required fields are:
   1. name: name of the account to be verified.
